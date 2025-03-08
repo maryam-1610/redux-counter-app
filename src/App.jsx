@@ -6,11 +6,15 @@ function App() {
   const count = useSelector((state) => state?.counter?.count)
 
   return (
-    <div style={{ background: "red" }}>
+    <div>
       <h1>Redux made it easy</h1>
 
       <p>Count is {count}</p>
-      <Counter />
+      <Counter name='Anthony' />
+      <Counter name='Bob' />
+      <Counter name='Mike' />
+
+
     </div>
   );
 }
